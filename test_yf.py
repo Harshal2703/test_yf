@@ -12,7 +12,47 @@ import yfinance as yf
 # Configuration
 # ============================================================
 
-TICKERS = ["BTC-USD", "ETH-USD", "XRP-USD", "SOL-USD"]
+TICKERS = [
+    # Major Indian Market Indices
+    "^NSEI",          # NIFTY 50
+    "^BSESN",         # BSE SENSEX
+    "^NSEBANK",       # NIFTY BANK
+    "^NIFTYJR",       # NIFTY NEXT 50 (verify availability)
+
+    # Banking & Financial Services
+    "^CNXFINANCE",    # NIFTY FINANCIAL SERVICES
+    "^CNXPSUBANK",    # NIFTY PSU BANK
+
+    # IT & Technology
+    "^CNXIT",         # NIFTY IT
+
+    # Automobile
+    "^CNXAUTO",       # NIFTY AUTO
+
+    # Healthcare & Pharmaceuticals
+    "^CNXPHARMA",     # NIFTY PHARMA
+
+    # Consumer & FMCG
+    "^CNXFMCG",       # NIFTY FMCG
+
+    # Metals & Mining
+    "^CNXMETAL",      # NIFTY METAL
+
+    # Energy & Infrastructure
+    "^CNXENERGY",     # NIFTY ENERGY
+    "^CNXINFRA",      # NIFTY INFRASTRUCTURE
+
+    # Real Estate
+    "^CNXREALTY",     # NIFTY REALTY
+
+    # Media
+    "^CNXMEDIA",      # NIFTY MEDIA
+
+    # Other sectors
+    "^CNXMNC",        # NIFTY MNC
+    "^CNXPSE",        # NIFTY PSE
+    "^CNXSERVICE",    # NIFTY SERVICES SECTOR
+]
 
 # Remove duplicate subscriptions
 TICKERS = list(dict.fromkeys(TICKERS))
